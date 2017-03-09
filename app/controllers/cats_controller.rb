@@ -70,7 +70,22 @@ class CatsController < ApplicationController
   	# redirect_to "/cats/#{cat.id}"
   end
 
+ 	def destroy
+    # get the cat id from the url params
+  	cat_id = params[:id]
 
+    # use `cat_id` to find the cat in the database
+    # and save it to an instance variable
+    cat = Cat.find_by_id(cat_id)
+
+ 		# destroy the cat
+    cat.destroy
+
+    # redirect to cats index
+    redirect_to cats_path
+    # redirect_to cats_path is equivalent to:
+    # redirect_to "/cats"
+	end
 
 
   private
