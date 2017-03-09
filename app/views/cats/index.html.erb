@@ -1,0 +1,28 @@
+<div class='container'>
+	<h1> Cats </h1>
+	<div class='table-responsive'>
+		<table class='table'>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Breed</th>
+					<th colspan="3"></th>
+			</thead>
+
+			<tbody>
+				<% @cats.each do |cat| %>
+  				<tr>
+    				<td><%= cat.name %></td>
+    				<td><%= cat.breed %></td>
+						<td><%= link_to 'Show', cat %></td>
+						<td><%= link_to 'Edit', edit_cat_path(cat) %></td>
+    				<td><%= link_to 'Delete', cat, method: :delete, data: { confirm: 'Are you sure' } %></td>
+					</tr>
+				<%end %>
+			</tbody>
+		</table>
+	</div>
+
+	<br>
+	<%= link_to 'Add New Cat', new_cat_path %>
+</div>
