@@ -1,24 +1,15 @@
 # README
+Description:
+Users can view 99 random cats, add, edit and remove cats
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Start Time: 10:45 AM
+End Time: 12:30 PM
 
-Things you may want to cover:
+Existing Features:
+Users can view, create, edit and remove cats
 
-* Ruby version
+Future Features:
+- Nav Bar
+- Images
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
