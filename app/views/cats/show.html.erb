@@ -1,0 +1,20 @@
+<div class='container'>
+  <h3> <%=@cat.name%>'s Page</h3>
+  <p>
+    <strong>Name:</strong>
+      <%= @cat.name %>
+  </p>
+
+  <p>
+    <strong>Breed:</strong>
+      <%= @cat.breed %>
+  </p>
+
+  <br>
+  <%= link_to 'Edit', edit_cat_path(@cat) %> | <%= link_to 'Back', cats_path %>
+  <br>
+  <br>
+  <%= button_to "Remove", @cat, method: :delete %>
+
+
+</div>

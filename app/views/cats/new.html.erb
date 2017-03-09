@@ -1,0 +1,20 @@
+<div class='container'>
+	<h3 class='text-center'> Add A Cat </h3>
+	<%= form_for @cat do |f| %>
+		<div class='field'>
+			<span>Name: </span>
+  		<%= f.text_field :name, required: true %>
+		</div>
+		<div class='field'>
+  		<span>Breed: </span>
+  		<%= f.text_field :breed, required: true %>
+		</div>
+
+		<br>
+  	<div class='actions'>
+			<%= f.submit %>
+		</div>
+	<% end %>
+
+	<%= link_to 'Back', :back %>
+</div>
